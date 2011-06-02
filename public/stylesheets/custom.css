@@ -1,11 +1,11 @@
 .container 
 {
-	width: 95%;
+	width: 99%;
 }
 
 body
 {
-	background: #cff;
+	background: #FFFFFF;
 }
 
 header
@@ -21,9 +21,10 @@ header img
 
 section
 {
-	margin-top: 1em;
-	font-size: 120%;
-	padding: 20px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	font-size: 100%;
+	padding: 2px;
 	background: #fff;
 }
 

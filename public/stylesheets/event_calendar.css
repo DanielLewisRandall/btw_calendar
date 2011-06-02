@@ -27,16 +27,23 @@
 .ec-calendar-header {
   padding: 5px 0;
   width: 100%;
-  table-layout: fixed;
+  /*table-layout: fixed;*/
 }
 
-.ec-month-name {
-  font-size: 16px;
+.ec-calendar-header tr th:last-child 
+{
+  text-align: right;
+}
+
+.ec-month-name 
+{
+  text-align: center;
+	font-size: 16px;
   font-weight: bold;
 }
 
-.ec-month-nav {
-
+.ec-month-nav 
+{
 }
 
 /* Containers */
@@ -235,3 +242,4 @@ a.ec-day-link {
   -khtml-border-radius: 2px;
   -moz-border-radius: 2px;
 }
+

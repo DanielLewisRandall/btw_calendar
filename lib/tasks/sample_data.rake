@@ -11,14 +11,12 @@ namespace :db do
     
     admin.toggle!(:admin)	
 
-    2.times do |n|
-      name  = Faker::Name.name
-      email = "example-#{n+1}@railstutorial.org"
-      password  = "password"
-      User.create!(:name => name,
-                   :email => email,
-                   :password => password,
-                   :password_confirmation => password)
-    end
+    other = User.create!(:name => "Paula Randall",
+                 :email => "pmrandall09@gmail.com",
+                 :password => "PowerfulPelican$",
+                 :password_confirmation => "PowerfulPelican$")
+    
+    other.toggle!(:admin)	
+
   end
 end
