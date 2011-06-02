@@ -13,6 +13,7 @@ to
 <p>
 <%= @event.end_at.strftime("%a %d %b %Y") %>
 </p>
+<b><%= link_to "Return to Calendar", root_path %></b>
 
 <% if signed_in? %>
 <%= link_to 'Edit', edit_event_path(@event) %> |
