@@ -1,0 +1,32 @@
+<center>
+	<h1>Events</h1>
+</center>
+
+<table width="100%">
+  <tr>
+    <th width="16%">Name</th>
+    <th width="16%">Start</th>
+    <th width="16%">End</th>
+    <th width="16%"></th>
+    <th width="16%"></th>
+    <th width="16%"></th>
+  </tr>
+
+<% @events.each do |event| %>
+  <tr>
+    <td><%= event.name %></td>
+    <td><%= event.start_at.strftime("%a %d %b %Y") %></td>
+    <td><%= event.end_at.strftime("%a %d %b %Y") %></td>
+    <td><%= link_to 'Show', event %></td>
+    <td><%= link_to 'Edit', edit_event_path(event) %></td>
+    <td><%= link_to 'Destroy', event, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<center>
+<% if signed_in? %>
+<%= link_to 'New Event', new_event_path %>
+<% end %>
+</center>

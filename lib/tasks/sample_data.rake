@@ -11,10 +11,10 @@ namespace :db do
     
     admin.toggle!(:admin)	
 
-    other = User.create!(:name => "Paula Randall",
-                 :email => "pmrandall09@gmail.com",
-                 :password => "PowerfulPelican$",
-                 :password_confirmation => "PowerfulPelican$")
+    other = User.create!(:name => "Editor in Chief",
+                 :email => "editor@bythewaymag.com",
+                 :password => "P0werfulPelican$",
+                 :password_confirmation => "P0werfulPelican$")
     
     other.toggle!(:admin)	
 
