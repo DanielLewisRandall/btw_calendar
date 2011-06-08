@@ -1,22 +1,47 @@
 <p id="notice"><%= notice %></p>
 <center>
-<h1>Event</h1>
+
+<% if @event.link.present? %>
+	<a href="<%= @event.link %>">
+<% end %>
+
+<img border="0" src="<%= @event.image.url %>">
+
+<h1><%= @event.name %></h1>
+
+<% if @event.link.present? %>
+	</a>
+<% end %>
+
 <p>
-  <b><%= @event.name %></b>
+	<%= simple_format(@event.details) %>
 </p>
-<p>
+
+<p><b>
 <%= @event.start_at.strftime("%a %d %b %Y") %>
-</p>
+</b></p>
+
+<% if @event.time.present? %>
+<p><b><%= @event.time %></b></p>
+<% end %>
+
+<% if @event.location.present? %>
+<p><%= simple_format(@event.location) %></p>
+<% end %>
+
+<% if @event.gmap.present? %>
+<p><%= @event.gmap.html_safe %></p>
+<% end %>
+
 <p>
-to
+	<b><%= link_to "Return to Calendar", root_path %></b>
 </p>
-<p>
-<%= @event.end_at.strftime("%a %d %b %Y") %>
-</p>
-<b><%= link_to "Return to Calendar", root_path %></b>
 
 <% if signed_in? %>
+<p>
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
+</p>
 <% end %>
+
 </center>

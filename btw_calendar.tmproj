@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>app/views/layouts/application.html.erb</string>
+	<string>db/migrate/20110608082805_add_details_to_events.rb</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -49,42 +49,14 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>app/controllers/users_controller.rb</key>
+		<key>app/views/events/_form.html.erb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>19</integer>
 				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>app/helpers/calendar_helper.rb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>app/views/calendar/index.html.erb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>2</integer>
+				<integer>19</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -128,26 +100,42 @@
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>24</integer>
+				<integer>0</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>6</integer>
+			<integer>0</integer>
 		</dict>
 		<key>app/views/sessions/new.html.erb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>71</integer>
 				<key>line</key>
-				<integer>4</integer>
+				<integer>1</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>25</integer>
+				<key>line</key>
+				<integer>1</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>71</integer>
+				<key>line</key>
+				<integer>1</integer>
+			</dict>
 		</dict>
 		<key>config/application.rb</key>
 		<dict>
@@ -163,40 +151,12 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>config/routes.rb</key>
+		<key>db/migrate/20110608082805_add_details_to_events.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>3</integer>
-				<key>line</key>
-				<integer>9</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>lib/tasks/sample_data.rake</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>5</integer>
-				<key>line</key>
-				<integer>20</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>public/stylesheets/custom.css</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>20</integer>
+				<integer>0</integer>
 				<key>line</key>
 				<integer>7</integer>
 			</dict>
@@ -208,20 +168,12 @@
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>app/helpers/calendar_helper.rb</string>
-		<string>app/views/layouts/_header.html.erb</string>
-		<string>app/controllers/calendar_controller.rb</string>
-		<string>app/views/calendar/index.html.erb</string>
-		<string>app/views/layouts/application.html.erb</string>
-		<string>lib/tasks/sample_data.rake</string>
-		<string>app/controllers/users_controller.rb</string>
-		<string>config/routes.rb</string>
-		<string>app/views/sessions/new.html.erb</string>
-		<string>public/stylesheets/custom.css</string>
+		<string>app/views/events/_form.html.erb</string>
+		<string>db/migrate/20110608082805_add_details_to_events.rb</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{0, 4}, {963, 998}}</string>
+	<string>{{-2, 4}, {963, 998}}</string>
 </dict>
 </plist>

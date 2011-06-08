@@ -152,14 +152,20 @@ a.ec-day-link {
   vertical-align: top;
   padding-right: 1px;
   padding-left: 2px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
 .ec-event-cell a {
   text-decoration: none;
+  vertical-align: top;
   display: block;
   width: 100%;
   height: 100%;
-}
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
 
 .ec-no-event-cell {
   cursor: default;
@@ -174,7 +180,11 @@ a.ec-day-link {
   -moz-border-radius: 3px;
   overflow: hidden;
   white-space: nowrap;
-}
+  vertical-align: top;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
 
 .ec-event :hover {
   /* doesn't look as good as js highlighting */
