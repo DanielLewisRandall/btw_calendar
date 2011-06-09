@@ -5,7 +5,6 @@ source 'http://rubygems.org'
 	gem 'gravatar_image_tag', '0.1.0'
 	gem "will_paginate", "~> 3.0.pre2"
 	gem 'event-calendar', :require => 'event_calendar'
-	gem 'paperclip'
 
 group :development do
 

@@ -5,9 +5,13 @@
 	<a href="<%= @event.link %>">
 <% end %>
 
-<img border="0" src="<%= @event.image.url %>">
+<% if @event.image.present? %>
+<img border="0" src="http://bythewaymag.com/images/event/<%= @event.image %>"/>
+<% end %>
 
+<% if @event.name.present? %>
 <h1><%= @event.name %></h1>
+<% end %>
 
 <% if @event.link.present? %>
 	</a>
